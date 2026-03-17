@@ -1,0 +1,146 @@
+p {
+  font-family: Poppins, Arial;
+}
+
+.hero {
+  border: none;
+  border-radius: 15px;
+
+  background-image: url("../Images/shutterstock_2262409797v2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50px;
+}
+
+.hero-search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 80%;
+  height: 110px;
+  background-color: white;
+}
+
+.buy-and-sell-section {
+  display: flex;
+  gap: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.buy-btn,
+.sell-btn {
+  border-bottom: 2px solid;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 6px 12px;
+  transition: color 0.15s;
+}
+
+.buy-btn:hover,
+.sell-btn:hover {
+  cursor: pointer;
+  color: #00b7b5;
+  border-bottom: solid;
+  border-width: 2px;
+  background-color: rgba(230, 230, 230, 0.466);
+}
+
+.search-box-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(182, 182, 182);
+  border-radius: 10px;
+
+  width: 95%;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.search-icon {
+  width: 25px;
+  color: rgb(182, 182, 182);
+}
+
+.search-box {
+  flex: 1;
+  border: none;
+  padding: 10px;
+}
+
+.search-button {
+  height: 36px;
+  width: 90px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 900;
+  padding: 6px 15px;
+  background: linear-gradient(45deg, #005461, #018790, #00b7b5, #f4f4f4);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.search-button:hover {
+  background: linear-gradient(45deg, #00282e, #00595f, #007a78, #aaaaaa);
+  opacity: 0.9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-button:active {
+  opacity: 0.6;
+}
+
+.filters {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+}
+
+.filters button {
+  flex: 1;
+  height: 36px;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.781);
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    opacity 0.15s;
+}
+
+.filters button:hover {
+  background-color: rgba(255, 255, 255, 0.938);
+}
+
+.filters button:active {
+  opacity: 0.7;
+}
